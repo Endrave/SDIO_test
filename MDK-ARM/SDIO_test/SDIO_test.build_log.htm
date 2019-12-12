@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: £gVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Endrave Chrome, MEMEME, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.23
+Toolchain Path:  D:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      CMSIS_AGDI.dll V1.27.5.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\vince\Desktop\learning material\Elec 3300\SDIO_test\MDK-ARM\SDIO_test.uvprojx
+Project File Date:  12/07/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'D:\Keil\ARM\ARMCC\Bin'
+Build target 'SDIO_test'
+compiling main.c...
+../Inc/led.h(77): warning:  #188-D: enumerated type mixed with another type
+  	    	 HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_5, 0);  // Pull the CLK LOW
+../Inc/led.h(78): warning:  #188-D: enumerated type mixed with another type
+  	    	 HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_7, byte&0x80);// Write one BIT data MSB first
+../Inc/led.h(80): warning:  #188-D: enumerated type mixed with another type
+               HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_5, 1);  // Pull the CLK HIGH
+../Inc/led.h(86): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_6, 0);   // Pull the CS pin LOW
+../Inc/led.h(89): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(
+PIOA, 
+PIO_PIN_6, 1);  // pull the CS HIGH
+../Inc/servo.h(51): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"E14") == 0){pwm_set(t1, 4, value);}
+../Inc/servo.h(52): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"D14") == 0){pwm_set(t4, 3, value);}
+../Inc/servo.h(53): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"D15") == 0){pwm_set(t4, 4, value);}
+../Inc/servo.h(55): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"C6") == 0){pwm_set(t3, 1, value);}
+../Inc/servo.h(56): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"C7") == 0){pwm_set(t3, 2, value);}
+../Inc/servo.h(57): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"D13") == 0){pwm_set(t4, 2, value);}
+../Inc/servo.h(58): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"E9") == 0){pwm_set(t1, 1, value);}
+../Inc/servo.h(59): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"E11") == 0){pwm_set(t1, 2, value);}
+../Inc/servo.h(60): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"E13") == 0){pwm_set(t1, 3, value);}
+../Inc/servo.h(62): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"A2") == 0){pwm_set(t5, 3, value);}
+../Inc/servo.h(63): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"B10") == 0){pwm_set(t2, 3, value);}
+../Inc/servo.h(64): warning:  #223-D: function "strcmp" declared implicitly
+  	if (strcmp(pin,"B11") == 0){pwm_set(t2, 4, value);}
+../Inc/servo.h(221): warning:  #177-D: variable "y"  was declared but never referenced
+     int y = 10;
+../Inc/servo.h(346): warning:  #1-D: last line of file ends without a newline
+   #endif // SERVO_H_
+../Inc/player.h(117): warning:  #1295-D: Deprecated declaration player_play - give arg types
+  void player_play();
+../Inc/player.h(119): warning:  #1295-D: Deprecated declaration player_pause - give arg types
+  void player_pause();
+../Src/main.c: 21 warnings, 0 errors
+linking...
+Program Size: Code=21696 RO-data=552 RW-data=8724 ZI-data=18204  
+FromELF: creating hex file...
+"SDIO_test\SDIO_test.axf" - 0 Error(s), 21 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM::CMSIS:CORE:5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_SDIO_test
+  D:\Keil\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
